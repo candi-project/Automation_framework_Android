@@ -1,0 +1,5 @@
+11/09/20 15:56:32 PM Friday: CRITICAL: This is a critical message.
+11/09/20 15:56:32 PM Friday: ERROR: This is an error message.
+11/09/20 15:56:32 PM Friday: INFO: This is an info message.
+11/09/20 15:56:32 PM Friday: WARNING: This is a warning message.
+11/09/20 15:56:32 PM Friday: DEBUG: This is a debug message.

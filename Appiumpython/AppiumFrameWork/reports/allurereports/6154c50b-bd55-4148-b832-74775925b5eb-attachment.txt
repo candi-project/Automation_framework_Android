@@ -1,0 +1,4 @@
+[32mINFO    [0m BasePage:BasePage.py:102 Send text on element found with locator Type: text and with locator value: Enter Email
+[32mINFO    [0m BasePage:BasePage.py:102 Send text on element found with locator Type: text and with locator value: Enter Password
+[32mINFO    [0m BasePage:BasePage.py:69 Clicked on element found with locator Type: id and with locator value: com.code2lead.kwad:id/Btn3
+[32mINFO    [0m BasePage:BasePage.py:79 Element with locator Type: text and with locator value: Enter Admin is displayed.

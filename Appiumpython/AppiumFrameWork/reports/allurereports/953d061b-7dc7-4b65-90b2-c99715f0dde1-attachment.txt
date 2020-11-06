@@ -1,0 +1,1 @@
+[32mINFO    [0m BasePage:BasePage.py:99 Unable to send text on element with locator Type: id and with locator value: com.code2lead.kwad:id/Edt_admin
