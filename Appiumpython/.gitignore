@@ -1,6 +1,6 @@
-.idea/
+../../.idea/
 __pycache__/
 *.log
 /venv/
-reports/
+AppiumFrameWork/reports/
  ../base/__pycache__/

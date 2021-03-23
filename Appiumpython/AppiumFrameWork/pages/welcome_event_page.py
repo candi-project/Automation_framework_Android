@@ -29,7 +29,7 @@ class WelcomeEventPage(BasePage):
         self.clickElement(self._test_app, "text")
 
     def event_page_verify(self):
-        self.isDisplayed(self._appointment, "id")
+        self.getElement(self._appointment, "id")
 
     def press_back_button_twice(self):
         self.driver.press_keycode(4)

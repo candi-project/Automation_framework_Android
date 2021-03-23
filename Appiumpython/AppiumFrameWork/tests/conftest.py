@@ -5,15 +5,15 @@ from AppiumFrameWork.utilities.constants import *
 
 @pytest.yield_fixture(scope="class")
 def beforeClass(request):
-    print("Before class.")
+    #print("Before class.")
     driver1 = Driver()
-    driver = driver1.getDriverMethod(pgconnect_package, pgconnect_launch_activity)
+    driver = driver1.getDriverMethod()
     if request.cls is not None:
         request.cls.driver = driver
     yield driver
     time.sleep(5)
     driver.quit()
-    print("After class.")
+    #print("After class.")
 
 @pytest.yield_fixture()
 def setUp():

@@ -15,7 +15,7 @@ class Driver:
         desired_caps['appPackage'] = 'de.ottonova.mobile'
         desired_caps['appActivity'] = 'de.ottonova.mobile.main.MainActivity'
         #desired_caps['newCommandTimeout'] = 600
-        desired_caps['noReset'] = 'True'
+        #desired_caps['noReset'] = 'True'
 
 
         # Android Demo App
