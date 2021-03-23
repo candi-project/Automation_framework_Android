@@ -1,3 +1,0 @@
-This is a setup guide.
-After method.
-After class.

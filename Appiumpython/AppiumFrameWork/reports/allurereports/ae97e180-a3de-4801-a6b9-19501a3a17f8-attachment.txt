@@ -1,2 +1,0 @@
-[32mINFO    [0m BasePage:BasePage.py:59 Clicked on element found with locator Type: id and with locator value: com.code2lead.kwad:id/ContactUs
-[32mINFO    [0m BasePage:BasePage.py:69 Element with locator Type: text and with locator value: Contact Us form is displayed.

@@ -1,4 +1,0 @@
-[32mINFO    [0m BasePage:BasePage.py:104 Send text on element found with locator Type: text and with locator value: Enter Email
-[32mINFO    [0m BasePage:BasePage.py:104 Send text on element found with locator Type: text and with locator value: Enter Password
-[32mINFO    [0m BasePage:BasePage.py:73 Unable to click element with locator Type: id and with locator value: com.code2lead.kwad:id/Btn3
-[32mINFO    [0m BasePage:BasePage.py:84 Element with locator Type: text and with locator value: Enter Admin is not displayed.

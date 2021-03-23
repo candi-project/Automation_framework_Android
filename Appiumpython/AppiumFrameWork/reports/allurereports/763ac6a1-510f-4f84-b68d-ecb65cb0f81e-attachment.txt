@@ -1,2 +1,0 @@
-[32mINFO    [0m BasePage:BasePage.py:65 Unable to click element with locator Type: id and with locator value: com.code2lead.kwad:id/Login
-[32mINFO    [0m BasePage:BasePage.py:98 Unable to send text on element with locator Type: text and with locator value: Enter Email

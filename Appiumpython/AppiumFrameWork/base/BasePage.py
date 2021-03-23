@@ -1,3 +1,6 @@
+import os
+import subprocess
+
 from allure_commons.types import AttachmentType
 from selenium.common.exceptions import ElementNotVisibleException, ElementNotSelectableException, NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
@@ -150,3 +153,10 @@ class BasePage:
         time.sleep(3)
         self.driver.start_activity(pgconnect_package, pgconnect_launch_activity)
 
+    def mirror_android_device_screen(self, udid=""):
+        """
+        Mirrors the screen of the android device under test to the desktop using scrcpy.
+        """
+        subprocess.Popen("scrcpy -s {}".format(udid), shell=True,
+                         stderr=subprocess.STDOUT, preexec_fn=os.setsid)
+        time.sleep(5)
