@@ -49,7 +49,7 @@ class BasePage:
             element = wait.until(lambda x: x.find_element_by_xpath("%s" % (locatorValue)))
             return element
         else:
-            self.log.info("Locator value" + locatorValue + "not found")
+            self.log.error("Locator value" + locatorValue + "not found")
 
         return element
 
@@ -60,7 +60,7 @@ class BasePage:
             element = self.waitForElement(locatorValue, locatorType)
             self.log.info("Element found with locator Type: " + locatorType + "and with locator value: " + locatorValue)
         except:
-            self.log.info(
+            self.log.error(
                 "Unable to find element with locator Type: " + locatorType + "and with locator value: " + locatorValue)
             self.takeScreenShot(locatorType)
             assert False
@@ -76,7 +76,7 @@ class BasePage:
             self.log.info(
                 "Clicked on element found with locator Type: " + locatorType + " and with locator value: " + locatorValue)
         except:
-            self.log.info(
+            self.log.error(
                 "Unable to click element with locator Type: " + locatorType + " and with locator value: " + locatorValue)
 
     def isDisplayed(self, locatorValue, locatorType="id"):
@@ -89,7 +89,7 @@ class BasePage:
                 "Element with locator Type: " + locatorType + " and with locator value: " + locatorValue + " is displayed.")
             return True
         except:
-            self.log.info(
+            self.log.error(
                 "Element with locator Type: " + locatorType + " and with locator value: " + locatorValue + " is not displayed.")
             self.takeScreenShot(locatorType)
             return False
@@ -103,7 +103,7 @@ class BasePage:
             self.driver.save_screenshot(screenShotPath)
             self.log.info("Screenshot saved to :" + screenShotPath)
         except:
-            self.log.info("Unable to save screenshot to :" + screenShotPath)
+            self.log.error("Unable to save screenshot to :" + screenShotPath)
 
     def sendText(self, text, locatorValue, locatorType="id"):
         element = None
@@ -114,7 +114,7 @@ class BasePage:
             self.log.info(
                 "Send text on element found with locator Type: " + locatorType + " and with locator value: " + locatorValue)
         except:
-            self.log.info(
+            self.log.error(
                 "Unable to send text on element with locator Type: " + locatorType + " and with locator value: " + locatorValue)
             self.takeScreenShot(locatorType)
             assert False
@@ -137,7 +137,7 @@ class BasePage:
             element.click()
 
         except:
-            self.log.info("Unable to scroll")
+            self.log.error("Unable to scroll")
 
     def push_local_file_to_the_pgconnect_directory_on_the_device_under_test(self, source_path,
                                                                             file_name_on_destination):

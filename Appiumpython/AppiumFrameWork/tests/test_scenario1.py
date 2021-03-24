@@ -1,3 +1,4 @@
+import time
 import unittest
 import pytest
 
@@ -23,5 +24,8 @@ class Scenario1(unittest.TestCase):
 
     @pytest.mark.run(order=4)
     def test_event_card_numer_title(self):
-        self.we.press_back_button_twice()
+        for i in range(2):
+         self.we.press_back_button()
+         time.sleep(1)
+
         self.we.count_event_card_print_title()
