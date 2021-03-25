@@ -98,7 +98,7 @@ class WelcomeEventPage(BasePage):
         self.clickElement(self._calculate_premium, "text")
 
     def get_url(self):
-        time.sleep(1)
+        time.sleep(5)
         webview = self.driver.contexts[1]
         self.driver.switch_to.context(webview)
         url = self.driver.current_url

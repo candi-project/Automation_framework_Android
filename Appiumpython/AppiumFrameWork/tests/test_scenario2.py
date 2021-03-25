@@ -12,7 +12,7 @@ class Scenario2(unittest.TestCase):
     def classObjects(self):
         self.we = WelcomeEventPage(self.driver)
 
-    @pytest.mark.run(order=2)
+    @pytest.mark.run(order=5)
     def test_welcome_page_to_test_app(self):
         self.we.welcome_page_verify()
         self.we.click_send_app_usage()
@@ -22,18 +22,18 @@ class Scenario2(unittest.TestCase):
             self.we.press_back_button()
             time.sleep(1)
 
-    @pytest.mark.run(order=3)
+    @pytest.mark.run(order=6)
     def test_profile(self):
         self.we.click_profile()
         self.we.press_back_button()
         self.we.verify_profile()
 
-    @pytest.mark.run(order=4)
+    @pytest.mark.run(order=7)
     def test_our_tariffs(self):
         self.we.click_our_tariff()
         self.we.verify_our_tariff()
 
-    @pytest.mark.run(order=5)
+    @pytest.mark.run(order=8)
     def test_calculate_premium(self):
         self.we.click_calculate_premium()
         self.we.get_url()
