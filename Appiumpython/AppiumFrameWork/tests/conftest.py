@@ -3,11 +3,12 @@ import pytest
 from AppiumFrameWork.base.DriverClass import Driver
 from AppiumFrameWork.utilities.constants import *
 
-@pytest.yield_fixture(scope="class")
+
+@pytest.fixture(scope="class")
 def beforeClass(request):
     print("Before class.")
     driver1 = Driver()
-    driver = driver1.getDriverMethod(pgconnect_package, pgconnect_launch_activity)
+    driver = driver1.getDriverMethod()
     if request.cls is not None:
         request.cls.driver = driver
     yield driver
@@ -15,7 +16,8 @@ def beforeClass(request):
     driver.quit()
     print("After class.")
 
-@pytest.yield_fixture()
+
+@pytest.fixture()
 def setUp():
     print("This is a setup guide.")
     yield

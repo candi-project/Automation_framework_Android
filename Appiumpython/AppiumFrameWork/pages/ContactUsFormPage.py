@@ -1,6 +1,7 @@
 from AppiumFrameWork.base.BasePage import BasePage
 import AppiumFrameWork.utilities.CustomLogger as cl
 
+
 class ContactForm(BasePage):
 
     def __init__(self, driver):
@@ -26,15 +27,15 @@ class ContactForm(BasePage):
         cl.allureLogs("Contact Us Form Page opened.")
 
     def enterName(self):
-        self.sendText("Code2Lead",self._enterName,"text")
+        self.sendText("Candi", self._enterName, "text")
         cl.allureLogs("Enter Name")
 
     def enterEmail(self):
-        self.sendText("abc@gmail.com",self._enterEmail,"text")
+        self.sendText("abc@gmail.com", self._enterEmail, "text")
         cl.allureLogs("Enter Email")
 
     def enterAddress(self):
-        self.sendText("Taiwan",self._enterAddress,"text")
+        self.sendText("Taiwan", self._enterAddress, "text")
         cl.allureLogs("Enter Address")
 
     def enterMNumber(self):
@@ -42,11 +43,5 @@ class ContactForm(BasePage):
         cl.allureLogs("Enter Mobile Number")
 
     def clickSubmitButton(self):
-        self.clickElement(self._submitButton,"text")
+        self.clickElement(self._submitButton, "text")
         cl.allureLogs("Clicked on Submit Button.")
-
-
-
-
-
-
