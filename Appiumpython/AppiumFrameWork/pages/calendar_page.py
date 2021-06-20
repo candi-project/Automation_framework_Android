@@ -8,7 +8,7 @@ class CalendarCase(BasePage):
         super().__init__(driver)
         self.driver = driver
 
-    # Locators values in Contact us form
+    # Locators values
     _menu_button = "com.samsung.android.calendar:id/open_drawer_badge"  # id
     _day = "Day"  # text
     _add_event = "com.samsung.android.calendar:id/floating_action_button"  # id
