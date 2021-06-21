@@ -1,3 +1,4 @@
+import time
 from AppiumFrameWork.base.BasePage import BasePage
 import AppiumFrameWork.utilities.CustomLogger as cl
 
@@ -31,7 +32,7 @@ class CalendarCase(BasePage):
 
     def enter_event_title(self):
         self.sendText("kfz24_tech_task", self._event_title, "id")
-        cl.allureLogs("Entered TiTle.")
+        cl.allureLogs("Entered Title.")
 
     def click_save(self):
         self.clickElement(self._save_button, "id")
@@ -45,5 +46,6 @@ class CalendarCase(BasePage):
         assert self.isDisplayed(self._background_container)
         if self.getElement(self._event_title).text == "kfz24_tech_task":
             self.clickElement(self._event_title)
+            time.sleep(2)
             self.takeScreenShot('kfz24_tech_task')
             self.screenShot('kfz24_tech_task')
